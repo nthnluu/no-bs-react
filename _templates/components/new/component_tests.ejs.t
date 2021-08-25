@@ -5,7 +5,7 @@ import <%=h.changeCase.pascalCase(name)%> from "./<%=h.changeCase.pascalCase(nam
 import {render} from "@testing-library/react";
 
 describe('lorem ipsum...', () => {
-    it('should be followed with dolor sit anem', function () {
+    it('should be followed with dolor sit anem', () => {
         render(<<%=h.changeCase.pascalCase(name)%> foo="asdf" />);
     });
 });
