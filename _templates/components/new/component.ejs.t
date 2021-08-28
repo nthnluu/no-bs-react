@@ -8,6 +8,9 @@ export interface <%=h.changeCase.pascalCase(name)%>Props {
     foo: string;
 }
 
+/**
+ * Write a short description of this component here...
+ */
 const <%=h.changeCase.pascalCase(name)%>: FC<<%=h.changeCase.pascalCase(name)%>Props> = (props) => {
     return <h1>{props.foo}</h1>;
 };

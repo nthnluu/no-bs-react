@@ -9,8 +9,9 @@ const theme = {
         },
     },
     palette: {
+        type: 'dark',
         primary: {
-            main: '#202021',
+            main: '#4285F4',
         },
         secondary: {
             main: '#19857b',
@@ -18,13 +19,16 @@ const theme = {
         error: {
             main: red.A400,
         },
+        white: {
+            main: "#fff"
+        }
     },
     shape: {
         borderRadius: 6,
     },
     typography: {
         fontFamily: [
-            'Rubik',
+            'IBM Plex Sans',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
