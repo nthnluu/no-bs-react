@@ -1,12 +1,16 @@
-import Button from "../components/Button/Button";
+import Navbar from "../components/shared/Navbar";
+import AccountMenu from "../components/shared/AccountMenu";
+import {testUser} from "../util/auth/auth_helpers";
+import React from "react";
+
+function AccountButton() {
+    return <AccountMenu key="account" user={testUser()}/>;
+}
 
 export default function Home() {
-  return (
-    <div>
-      <Button variant="contained" color="primary" tooltip="Hello">
-          Button
-      </Button>
-
-    </div>
-  );
+    return (
+        <div>
+            <Navbar endItems={[<AccountButton key="account"/>]}/>
+        </div>
+    );
 }

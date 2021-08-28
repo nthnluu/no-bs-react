@@ -1,5 +1,5 @@
 import {ThemeProvider} from "@material-ui/core";
-import theme from "../src/theme";
+import theme from "../src/util/theme";
 import {createTheme} from "@material-ui/core/styles";
 
 export const parameters = {

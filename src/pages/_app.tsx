@@ -1,8 +1,8 @@
 import type {AppProps} from 'next/app';
 import {CssBaseline, ThemeProvider} from "@material-ui/core";
 import Head from "next/head";
-import theme from "../theme";
-import createEmotionCache from "../createEmotionCache";
+import theme from "../util/theme";
+import createEmotionCache from "../util/createEmotionCache";
 import {CacheProvider, EmotionCache} from "@emotion/react";
 import {createTheme} from "@material-ui/core/styles";
 import {useMemo} from "react";
