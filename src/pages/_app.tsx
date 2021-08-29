@@ -6,6 +6,7 @@ import createEmotionCache from "../util/createEmotionCache";
 import {CacheProvider, EmotionCache} from "@emotion/react";
 import {createTheme} from "@material-ui/core/styles";
 import {useMemo} from "react";
+import DialogProvider from "../components/shared/providers/DialogProvider";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -25,8 +26,10 @@ function MyApp(props: MyAppProps) {
                 <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width'/>
             </Head>
             <ThemeProvider theme={muiTheme}>
-                <CssBaseline/>
-                <Component {...pageProps} />
+                <DialogProvider>
+                    <CssBaseline/>
+                    <Component {...pageProps} />
+                </DialogProvider>
             </ThemeProvider>
         </CacheProvider>
     );
