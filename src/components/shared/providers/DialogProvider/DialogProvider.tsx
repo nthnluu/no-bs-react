@@ -19,8 +19,12 @@ const DialogProvider: FC = ({children}) => {
         setCurrentDialog(DialogTypes.ALERT);
     }
 
+    function isOpen(dialogType: DialogTypes) {
+        return currentDialog === dialogType;
+    }
+
     return <DialogContext.Provider value={{closeDialog, openAlertDialog}}>
-        <AlertDialog open={currentDialog === DialogTypes.ALERT}
+        <AlertDialog open={isOpen(DialogTypes.ALERT)}
                      onClose={closeDialog}
                      title={dialogConfig?.title}
                      description={dialogConfig?.description}/>
