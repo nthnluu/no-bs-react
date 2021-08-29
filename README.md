@@ -68,9 +68,9 @@ Now that you're all caught up on the basics, it's time for you to start bringing
 - 🤖 [**API Connection**](https://nextjs.org/learn) - integrate APIs in a modular and extensible way.
 - 📱 [**Building your UI**](https://nextjs.org/learn) - build an accesible and optimzed UI.
 - 🌈 [**Themes and Styles**](https://nextjs.org/learn) - customize the look and feel of your application.
-- 💻 [**Deployment**](https://nextjs.org/learn) - customize the look and feel of your application.
+- 🌎 [**Deployment**](https://nextjs.org/learn) - bring your app online for the world to see.
 
-Those are just the highlights! Check out our [**wiki**](https://github.com/nthnluu/no-bs-react/wiki) to see eveything you can do.
+Those are just the highlights! Check out our [**wiki**](https://github.com/nthnluu/no-bs-react/wiki) for the full documentation.
 
 ## 🛠 Contributing
 
