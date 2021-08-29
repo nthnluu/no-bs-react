@@ -1,12 +1,13 @@
-# No BS React
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://raw.githubusercontent.com/nthnluu/no-bs-react/main/public/no_bs_react_cover.png" alt=""/>
+# No-BS React 🔥
+This is a production-ready React boilerplate that's designed to let you focus on building modular, well-tested features. 
 
 ## Tech Stack
-- Next.js - a React framework
-- Material UI - a themeable React component library based on Material Design
-- Storybook - a tool for building and browsing UI components in isolation
-- Redux
-- SWR
+* ⚛️ [**Next.js**](https://nextjs.org/docs) - a developer-friendly React framework for building web apps.
+* 🎨 [**Material UI**](https://next.material-ui.com/) - an extensive and themeable React component library.
+* 📚 [**Storybook**](https://storybook.js.org/docs/react) - a tool for building, browsing, and documenting UI components in isolation.
+* 🧪 [**Jest**](https://jestjs.io/) - a Javascript unit testing library.
+* 🔬 [**React Testing Library**](https://testing-library.com/docs/react-testing-library/intro/) - a lightweight utility library for unit testing React components.
 
 ## Getting Started
 
