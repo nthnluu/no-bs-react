@@ -2,13 +2,15 @@ import {FC, useRef, useState} from "react";
 import {
     Avatar,
     ButtonBase,
-    Divider, Paper,
+    Divider,
+    Paper,
     Popper,
     Stack,
     Typography
 } from "@material-ui/core";
 import {User} from "../../../util/auth/auth_helpers";
 import Button from "../Button";
+import FocusTrap from "focus-trap-react";
 
 export interface AccountMenuProps {
     /** The current user. */
@@ -44,33 +46,38 @@ const AccountMenu: FC<AccountMenuProps> = ({user}) => {
 
         {/*Account menu popover*/}
         <Popper id={id} open={open} anchorEl={buttonRef.current}>
-            <Paper elevation={4} sx={{width: 320, m: 1, textAlign: "center"}}>
-                <Stack sx={{p: 4}} alignItems="center">
-                    <Avatar
-                        src={user.image}
-                        sx={{
-                            width: 84,
-                            height: 84,
-                            fontSize: 36,
-                            marginBottom: 2
-                        }}>{getInitials(user.name)}</Avatar>
-                    <Typography variant="h6">
-                        {user.name}
-                    </Typography>
-                    <Typography variant="subtitle1">
-                        {user.email}
-                    </Typography>
-                    <Divider sx={{my: 3, width: "100%"}}/>
-                    <Stack spacing={1} sx={{width: "100%"}}>
-                        <Button variant="contained" size="large" fullWidth>
-                            Sign out
-                        </Button>
-                        <Button variant="outlined" size="large" fullWidth>
-                            Manage account
-                        </Button>
+            <FocusTrap active={open} focusTrapOptions={{
+                clickOutsideDeactivates: true,
+                onDeactivate: () => setTimeout(() => setOpen(false), 100),
+            }}>
+                <Paper elevation={4} sx={{width: 320, m: 1, textAlign: "center"}}>
+                    <Stack sx={{p: 4}} alignItems="center">
+                        <Avatar
+                            src={user.image}
+                            sx={{
+                                width: 84,
+                                height: 84,
+                                fontSize: 36,
+                                marginBottom: 2
+                            }}>{getInitials(user.name)}</Avatar>
+                        <Typography variant="h6">
+                            {user.name}
+                        </Typography>
+                        <Typography variant="subtitle1">
+                            {user.email}
+                        </Typography>
+                        <Divider sx={{my: 3, width: "100%"}}/>
+                        <Stack spacing={1} sx={{width: "100%"}}>
+                            <Button variant="contained" size="large" fullWidth>
+                                Sign out
+                            </Button>
+                            <Button variant="outlined" size="large" fullWidth>
+                                Manage account
+                            </Button>
+                        </Stack>
                     </Stack>
-                </Stack>
-            </Paper>
+                </Paper>
+            </FocusTrap>
         </Popper>
     </>);
 };
