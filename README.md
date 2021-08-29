@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/nthnluu/no-bs-react/main/public/no_bs_react_cover.png" alt=""/>
+<img src="https://raw.githubusercontent.com/nthnluu/no-bs-react/main/public/nobs_react_cover.png" alt=""/>
 # No-BS React 🔥
 This is a production-ready React boilerplate that's designed to let you focus on building modular, well-tested features. 
 
