@@ -1,7 +1,12 @@
 <img src="https://raw.githubusercontent.com/nthnluu/no-bs-react/main/public/nobs_react_cover.png" alt=""/>
 
-# No-BS React 🔥
-This is a production-ready React boilerplate that's designed to help you stay productive by letting you focus less on tedious setup and more on building modular, well-tested features. 
+<h1 align="center">No-BS React 🔥</h1>
+
+<div align="center">
+ <b>
+  Stay productive and focused on bringing your ideas to life. No-BS React is a production-ready React boilerplate that lets you focus less on tedious setup and more on building accesible, modular, and well-tested features.
+ </b>
+</div>
 
 ## Tech Stack 🥞
 * ⚛️ [**Next.js**](https://nextjs.org/docs) - a developer-friendly React framework for building web apps.
