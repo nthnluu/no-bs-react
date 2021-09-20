@@ -1,3 +1,4 @@
+name: Typescript Check
 on:
   push:
   pull_request:
