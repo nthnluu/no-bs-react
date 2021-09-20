@@ -14,7 +14,7 @@ class TestUser implements User {
     }
 }
 
-class TestAuthService implements AuthService<TestUser> {
+class TestAuthService implements AuthService {
     currentUser: TestUser | undefined;
     isAuthenticated: boolean;
     userDatabase: TestUser[];
