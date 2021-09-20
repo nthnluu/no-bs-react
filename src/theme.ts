@@ -24,7 +24,7 @@ const theme = {
     },
     typography: {
         fontFamily: [
-            'Rubik',
+            'Work Sans',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
