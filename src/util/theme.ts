@@ -27,8 +27,12 @@ const theme = {
         borderRadius: 6,
     },
     typography: {
+        button: {
+            textTransform: "none" as const,
+            fontWeight: 600
+        },
         fontFamily: [
-            'IBM Plex Sans',
+            'Work Sans',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
