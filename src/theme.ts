@@ -24,7 +24,7 @@ const theme = {
     },
     typography: {
         fontFamily: [
-            'Work Sans',
+            'Lato',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
