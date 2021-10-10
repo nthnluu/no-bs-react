@@ -32,7 +32,7 @@ const theme = {
             fontWeight: 600
         },
         fontFamily: [
-            'Work Sans',
+            'IBM Plex Sans',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
