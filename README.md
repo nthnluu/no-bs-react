@@ -4,7 +4,7 @@
 
 <div align="center">
  <b>
-  Stay productive and focused on bringing your ideas to life. No-BS React is a production-ready React boilerplate that lets you spend less time on tedious setup and more time building accessible, modular, and well-tested features.
+  No-BS React is a production-ready React boilerplate that lets you spend less time on tedious setup and more time building accessible, modular, and well-tested features.
  </b>
 </div>
 
