@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
                 <Head>
                     <link
                         rel='stylesheet'
-                        href='https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,ç700&display=swap'
+                        href='https://fonts.googleapis.com/css?family=DM+Sans:300,400,500,600,ç700&display=swap'
                     />
                 </Head>
                 <body>
@@ -22,6 +22,8 @@ export default class MyDocument extends Document {
     }
 }
 
+// `getInitialProps` belongs to `_document` (instead of `_app`),
+// it's compatible with static-site generation (SSG).
 MyDocument.getInitialProps = async (ctx) => {
     // Resolution order
     //
@@ -50,12 +52,14 @@ MyDocument.getInitialProps = async (ctx) => {
     // You can consider sharing the same emotion cache between all the SSR requests to speed up performance.
     // However, be aware that it can have global side effects.
     const cache = createEmotionCache();
-    const {extractCriticalToChunks} = createEmotionServer(cache);
+    const { extractCriticalToChunks } = createEmotionServer(cache);
 
     ctx.renderPage = () =>
         originalRenderPage({
-            // eslint-disable-next-line react/display-name
-            enhanceApp: (App: any) => (props) => <App emotionCache={cache} {...props} />,
+            enhanceApp: (App: any) =>
+                function EnhanceApp(props) {
+                    return <App emotionCache={cache} {...props} />;
+                },
         });
 
     const initialProps = await Document.getInitialProps(ctx);
@@ -67,7 +71,7 @@ MyDocument.getInitialProps = async (ctx) => {
             data-emotion={`${style.key} ${style.ids.join(' ')}`}
             key={style.key}
             // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{__html: style.css}}
+            dangerouslySetInnerHTML={{ __html: style.css }}
         />
     ));
 

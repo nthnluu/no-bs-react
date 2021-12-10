@@ -1,6 +1,6 @@
-import {ThemeProvider} from "@material-ui/core";
+import {ThemeProvider} from "@mui/material";
 import theme from "../src/util/theme";
-import {createTheme} from "@material-ui/core/styles";
+import {createTheme} from "@mui/material/styles";
 
 export const parameters = {
     actions: {argTypesRegex: "^on[A-Z].*"},

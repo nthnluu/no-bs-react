@@ -1,4 +1,4 @@
-import {red} from '@material-ui/core/colors';
+import {red} from '@mui/material/colors';
 
 const theme = {
     components: {
@@ -32,7 +32,7 @@ const theme = {
             fontWeight: 600
         },
         fontFamily: [
-            'IBM Plex Sans',
+            'DM Sans',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',

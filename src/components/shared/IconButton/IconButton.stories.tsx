@@ -1,7 +1,7 @@
 import React from 'react';
 import {ComponentMeta} from '@storybook/react';
 import IconButton, {IconButtonProps} from "./IconButton";
-import {ThumbDown} from "@material-ui/icons";
+import {ThumbDown} from "@mui/icons-material";
 
 export default {
     title: 'Components/IconButton',

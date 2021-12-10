@@ -1,5 +1,5 @@
 import {FC} from "react";
-import {Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@material-ui/core";
+import {Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle} from "@mui/material";
 import Button from "../../Button";
 
 export interface AlertDialogProps {

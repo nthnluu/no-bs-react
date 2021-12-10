@@ -13,12 +13,12 @@
     "add-component": "hygen components new"
   },
   "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "latest",
-    "@emotion/server": "latest",
-    "@emotion/styled": "latest",
-    "@material-ui/core": "next",
-    "@material-ui/icons": "^5.0.0-beta.5",
+    "@emotion/cache": "^11.6.0",
+    "@emotion/react": "^11.7.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.1",
+    "@mui/material": "^5.2.3",
     "axios": "^0.21.1",
     "focus-trap-react": "^8.7.1",
     "next": "11.1.0",

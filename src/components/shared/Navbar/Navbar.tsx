@@ -1,7 +1,7 @@
 import {FC} from "react";
-import {AppBar, Box, LinearProgress, Stack, Toolbar, Typography} from "@material-ui/core";
+import {AppBar, Box, LinearProgress, Stack, Toolbar, Typography} from "@mui/material";
 import IconButton from "../IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export interface NavbarProps {
     /** Displays a menu button on the leading edge of the navbar. */

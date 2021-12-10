@@ -7,7 +7,7 @@ import {
     Popper,
     Stack,
     Typography
-} from "@material-ui/core";
+} from "@mui/material";
 import {User} from "../../../util/auth/auth_helpers";
 import Button from "../Button";
 import FocusTrap from "focus-trap-react";

@@ -1,6 +1,6 @@
 import {FC} from "react";
-import {Box, ButtonProps as MuiButtonProps, CircularProgress, Tooltip} from "@material-ui/core";
-import MuiButton from "@material-ui/core/Button";
+import {Box, ButtonProps as MuiButtonProps, CircularProgress, Tooltip} from "@mui/material";
+import MuiButton from "@mui/material/Button";
 
 export interface ButtonProps extends MuiButtonProps {
     /** Additional text to be displayed when the button is hovered. */
